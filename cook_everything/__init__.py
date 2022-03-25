@@ -5,7 +5,10 @@ import os
 
 class CookEverything(object):
     def __init__(self) -> None:
-        """Cook Everything, 文字菜谱转 JSON 转换器一枚"""
+        """Cook Everything, 文字菜谱转 JSON 转换器一枚
+        
+        本项目基于 https://github.com/Anduin2017/HowToCook .
+        """
         super().__init__()
         self.analyzer = Analyzer()
     

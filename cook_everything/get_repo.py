@@ -5,6 +5,7 @@ import os
 
 class Downloader(object):
     def __init__(self) -> None:
+        """HowToCook 菜谱下载器"""
         super().__init__()
         self.REQUEST_URL = "https://api.github.com/repos/{owner}/{repo}/zipball/"
         self.OWNER = "Anduin2017"
@@ -30,6 +31,11 @@ class Downloader(object):
         os.remove(filepath)
     
     def download(self, filepath: str = "./data/dishes"):
+        """HowToCook 菜谱自动下载器
+
+        Args:
+            filepath (str, optional): 下载路径. Defaults to "./data/dishes".
+        """
         self.crawl()
         self.unzip(extract_to=filepath)
 
