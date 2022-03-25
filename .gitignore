@@ -1,0 +1,4 @@
+data/dishes
+data/export
+venv
+**/__pycache__
